@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import com.shawnlin.numberpicker.NumberPicker
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+
+        val np = findViewById<View>(R.id.number_picker) as NumberPicker
+        val hours : Array<String>? = null
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

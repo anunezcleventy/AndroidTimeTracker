@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/vue-material/dist/vue-material.min.css">
+	<link rel="stylesheet" href="static/style.css">
+
+	<title>LMS</title>
+</head>
+<body>
+	<script src="./db.js"></script>
+	<div class="container-fluid">
+  		<div id="appWrapper">
+			<app></app>
+		</div>
+	</div>
+	<script>
+		window.$ = window.jQuery = require('jquery');
+		require('bootstrap');
+		require('vue-material');
+	</script>
+	<script src="dist/build.js"></script>
+</body>
+</html>

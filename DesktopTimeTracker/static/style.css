@@ -1,0 +1,729 @@
+
+@font-face {
+  font-family: Nunito-Black;
+  src: url(./fonts/Nunito-Black.ttf);
+}
+
+@font-face {
+  font-family: Nunito-BlackItalic;
+  src: url(./fonts/Nunito-BlackItalic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(./fonts/Nunito-Bold.ttf);
+}
+
+@font-face {
+  font-family: Nunito-BoldItalic;
+  src: url(./fonts/Nunito-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-ExtraBold;
+  src: url(./fonts/Nunito-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: Nunito-ExtraBoldItalic;
+  src: url(./fonts/Nunito-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-ExtraLight;
+  src: url(./fonts/Nunito-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: Nunito-ExtraLightItalic;
+  src: url(./fonts/Nunito-ExtraLightItalic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Italic;
+  src: url(./fonts/Nunito-Italic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Light;
+  src: url(./fonts/Nunito-Light.ttf);
+}
+
+@font-face {
+  font-family: Nunito-LightItalic;
+  src: url(./fonts/Nunito-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: Nunito-Regular;
+  src: url(./fonts/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: Nunito-SemiBold;
+  src: url(./fonts/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Nunito-SemiBoldItalic;
+  src: url(./fonts/Nunito-SemiBoldItalic.ttf);
+}
+
+
+
+/** GENERAL **/
+/** MODALS **/
+/** LOGIN1 **/
+/** LOGIN2 **/
+/** MENU AND HEADER **/
+/** SCHOOCLASSES **/
+
+
+
+/** GENERAL **/
+
+body {
+  font-family: 'Nunito-Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito-Bold', sans-serif;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.btn, button, input, optgroup, select, textarea {
+  font-family: 'Nunito-SemiBold', sans-serif;
+  border-radius: 20px;
+  margin: 12px 0;
+  padding: 0 24px;
+  height: 40px;
+  border: none;
+  background-color: rgba(64, 66, 151, .1);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #999999;
+}
+
+.btn-primary {
+  background-color: #1890D5;
+  border-color: #1890D5;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  background-color: transparent;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.login {
+  background-color: #8D288B;
+  background-image: url(img/background-pattern.svg);
+}
+
+.recorded-users .user.other-account a{
+  color: #666666;
+}
+
+.content-component {
+  width: 100%;
+  height: 100vh;
+  display: table;
+}
+
+.no-data-overlay {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.no-data-overlay .background {
+  display: block;
+  background-repeat: no-repeat;
+  height: 160px;
+  background-position: 50%;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.no-data-overlay p {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 24px;
+  font-size: 20px;
+  color: #CCC;
+}
+
+.exit-icon {
+  background-image: url(img/logout.png);
+}
+
+.sync-icon {
+  background-image: url(img/synchronize.png);
+}
+
+.divider {
+  border-top: 1px solid #DDDDDD;
+  width: 100%;
+}
+
+.md-checkbox label {
+  color: #666666;
+}
+
+.login.container-fluid {
+  overflow: auto;
+}
+
+/** END GENERAL **/
+
+
+/** MODALS **/
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    width: 500px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 20px 1px;
+    overflow-x: auto;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-header,
+  .modal-footer {
+    padding: 15px;
+    display: flex;
+  }
+
+  .modal-header {
+    border-bottom: 1px solid #eeeeee;
+    color: #4AAE9B;
+    justify-content: space-between;
+  }
+
+  .modal-footer {
+    border-top: 1px solid #eeeeee;
+    justify-content: flex-end;
+  }
+
+  .modal-body {
+    position: relative;
+    padding: 20px 10px;
+  }
+
+  .btn-close {
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4AAE9B;
+    background: transparent;
+  }
+
+  .btn-green {
+    color: white;
+    background: #4AAE9B;
+    border: 1px solid #4AAE9B;
+    border-radius: 2px;
+  }
+
+  .modal-fade-enter,
+  .modal-fade-leave-active {
+    opacity: 0;
+  }
+
+  .modal-fade-enter-active,
+  .modal-fade-leave-active {
+    transition: opacity .5s ease
+  }
+
+
+/** END MODALS **/
+
+
+/** LOGIN1 **/
+
+.recorded-users {
+  text-align: left;
+  margin-right: -33px;
+  margin-left:  -33px;
+}
+
+.recorded-users .user {
+  width: 100%;
+  margin: 12px 0;
+  max-height: 44px;
+  overflow: hidden;
+}
+
+.recorded-users .more-users {
+  display: none;
+  height: 24px;
+  margin: 12px 0;
+  width: 100%;
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/down-chevron.svg);
+  transition: .3s ease-out;
+}
+
+
+.recorded-users .more-users:hover {
+  cursor: pointer;
+}
+
+.recorded-users .more-users.show {
+  display: block;
+}
+
+.recorded-users .user a {
+  font-family: 'Nunito-SemiBold', sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333333;
+  line-height: 44px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  padding: 0;
+  overflow: hidden;
+}
+
+.recorded-users-box {
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+}
+
+.recorded-users-box.show + .more-users {
+  transform: scale(1,-1);
+}
+
+.recorded-users-box .profile-image {
+  height: 44px;
+}
+
+.profile-image {
+  width: 44px;
+  float: left;
+  background-image: url(img/default_male_image.png);
+  height: 100%;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+
+/** END LOGIN1 **/
+
+
+
+/** LOGIN2 **/
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+    padding: 48px 78px;
+    padding-top: 2px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
+
+.login-box button {
+  font-family: 'Nunito-Bold', sans-serif;
+}
+
+.subtitle {
+  margin-bottom: 36px;
+}
+
+.subtitle h5 {
+  font-size: 18px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  min-height: 150px;
+  background-image: url('img/logo-uno.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.md-checkbox .md-checkbox-container {
+  border-color: #1890d5;
+  background-color: #1890d5;
+}
+
+.md-checkbox .md-checkbox-container:after {
+  border-color: #ffffff;
+}
+
+/** END LOGIN2 **/
+
+
+
+
+
+/** MENU AND HEADER **/
+
+.title {
+  margin-left: 32px;
+  float: left;
+  color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  background-color: #1890D5;
+  padding: 20px 24px;
+}
+
+.hamburguer {
+  float: left;
+  background-image: url(img/menu.svg);
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  transition: .2s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  height: 100%;
+  width: 256px;
+  background: white;
+  box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.35);
+  transition: .4s ease-out;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.38);
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .6s;
+}
+
+.logo-container {
+  height: 64px;
+  background-color: #333333;
+}
+
+.logo-container .logo {
+  height: 100%;
+  width: auto;
+  min-height: 0;
+  background-position: 24px;
+}
+
+.overlay.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.hamburguer:hover {
+  cursor: pointer;
+  height: 28px;
+  width: 28px;
+  margin: -2px;
+}
+
+.menu-header {
+  background-color: #8D288B;
+  background-image: url(img/background-pattern.svg);
+  background-size: 300%;
+}
+
+.menu-header .user {
+  height: 144px;
+  width: 100%;
+}
+
+.menu-header .profile-image {
+  width: 56px;
+  height: 56px;
+  margin: 24px;
+  margin-bottom: 19px;
+}
+
+.menu-header .name {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+  padding-left: 24px;
+  color: #fff;
+}
+
+.menu-header .name button {
+  overflow: hidden;
+  color: #FFFFFF;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  padding-right: 40px;
+  background-color: transparent;
+  margin: 0;
+}
+
+.menu-header .name button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.menu-header .name button::after {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+.menu-header .recorded-users.dropdown-menu {
+  padding: 0;
+  width: 208px;
+  border-radius: 6px;
+  margin: 0;
+  border: none;
+  margin-top: -8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.menu-header .recorded-users .user {
+  height: 24px;
+  max-height: 24px;
+  margin: 16px 0;
+}
+
+.menu-header .recorded-users .user a {
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 24px;
+}
+    
+.menu-header .recorded-users .user .profile-image, .menu-header .recorded-users .user .exit-icon {
+  float: left;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 12px;
+  margin-left: 16px;
+}
+
+.menu-body .sync-button .sync-icon {
+  float: left;
+  height: 18px;
+  width: 18px;
+  padding: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 12px;
+  margin-left: 24px;
+}
+
+.menu-header .recorded-users .more-users {
+  height: 18px;
+}
+
+.menu-body .sync-button {
+  margin-top: 25px;
+}
+
+.menu-body .sync-button a {
+  font-family: 'Nunito-Bold', sans-serif;
+  padding: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.searchbox {
+  float: right;
+}
+
+.srch-form {
+  position: relative;
+  width: 44px;
+}
+
+.srch-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 26px;
+  overflow: hidden;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.srch-wrapper.open {
+  width: 272px;
+}
+
+.srch-input {
+  width: calc(100% - 32px);
+  position: relative;
+  background-color: transparent;
+  height: 26px;
+  color: #fff;
+  line-height: 26px;
+  padding: 5px 26px 5px 5px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fff;
+  border-radius: 0;
+  margin: 0;
+  margin-left: 32px;
+}
+
+.srch-input::placeholder {
+  color: #fff;
+  opacity: .3;
+}
+
+.srch-input:focus {
+  outline: none;
+}
+
+.srch-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-image: url(img/search.png);
+  background-color: transparent;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.srch-button:hover {
+  cursor: pointer;
+}
+
+.srch-button:focus {
+  outline: none;
+}
+
+.close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 0;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url(img/close.png);
+  transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.srch-wrapper.open .close-button {
+  width: 24px;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+
+
+
+/** END MENU AND HEADER **/
+
+
+
+
+/** SCHOOCLASSES **/
+
+.schoolclasses .no-data-overlay .background {
+  background-image: url(img/no-classrooms.png);
+}
+
+
+
+/** END SCHOOCLASSES **/
